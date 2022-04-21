@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Akshar', sans-serif;
+    color: #D5D4D8;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+    display: none;
+}
+
+main {
+    max-width: 800px;
+    height: 600px;
+    background-color: #1f2937;
+    padding: 1em 0;
+    margin: 2em auto;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.utility, .color-palette, .hex-codes {
+    display: flex;
+    justify-content: center;
+}
+
+.utility {
+    height: 5vh;
+    gap: .75em;
+    padding: 0 1em;
+}
+
+input, button, select {
+    cursor: pointer;
+}
+
+input {
+    display: inline-block;
+    align-self: center;
+    height: 100%;
+}
+
+select {
+    letter-spacing: 1px;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    background-color: #1f2937;
+    color: #D5D4D8;
+    border: 1px solid #D5D4D8;
+    border-radius: 5px;
+    padding-left: .5em;
+}
+
+.btn {
+    padding: .5em 1em;
+    background-color: #3b4d67;
+    border: none;
+    border-radius: 5px;
+    color: #D5D4D8;
+}
+
+.btn:focus, .btn:hover {
+    background-color: #1f2937;
+    border: 1px solid #3b4d67;
+}
+
+.container {
+    height: 90%;
+}
+
+.color-palette {
+    padding: 0;
+    height: 90%;
+    justify-content: center;
+}
+
+li {
+    width: 20%;
+    list-style: none;
+}
+
+.color-1 {
+    background-color: red;
+}
+
+.color-2 {
+    background-color: yellow;
+}
+
+.color-3 {
+    background-color: green;
+}
+
+.color-4 {
+    background-color: violet;
+}
+
+.color-5 {
+    background-color: purple;
+}
+
+.hex-codes {
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}

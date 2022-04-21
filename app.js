@@ -1,10 +1,12 @@
 const btnEl = document.querySelector('.btn')
 
+const getPalette = () => document.querySelector('.dropdown-list').value;
 
 const getColorScheme = () => {
+    const colorPickerEl = document.querySelector('.color-picker').value.slice(1)
     let hexCodesHtml = '';
     let colorsHtml = '';
-    fetch('https://www.thecolorapi.com/scheme?hex=24B1E0&mode=monochrome&count=6')
+    fetch(`https://www.thecolorapi.com/scheme?hex=${colorPickerEl}&mode=${getPalette()}&count=6`)
     .then(res => res.json())
     .then(data => {
         const colorsArr = data.colors
@@ -23,7 +25,6 @@ const getColorScheme = () => {
 
         document.querySelector('.hex-codes').innerHTML = hexCodesHtml;
         document.querySelector('.color-palette').innerHTML = colorsHtml;
-        console.log(colorsHtml)
     })
 
 }

@@ -102,6 +102,10 @@ li {
     font-size: 1.1rem;
 }
 
+.hex {
+    cursor: pointer;
+}
+
 @media (max-width: 560px) {
     * {
         margin: 0;
@@ -146,6 +150,7 @@ li {
     }
 
     .hex {
+        padding-top: .7em;
         font-size: .7rem;
     }
 

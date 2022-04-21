@@ -3,6 +3,7 @@ const btnEl = document.querySelector('.btn')
 const getPalette = () => document.querySelector('.dropdown-list').value;
 
 const getColorScheme = () => {
+    
     const colorPickerEl = document.querySelector('.color-picker').value.slice(1)
     let hexCodesHtml = '';
     let colorsHtml = '';
@@ -22,9 +23,14 @@ const getColorScheme = () => {
             <li class="hex">${hexCode.hex.value}</li>
             `
         }
-
         document.querySelector('.hex-codes').innerHTML = hexCodesHtml;
         document.querySelector('.color-palette').innerHTML = colorsHtml;
+
+        const hexCodesNode = document.querySelectorAll('.hex')
+        for (let hexCode of hexCodesNode) {
+            console.log(hexCode.textContent)
+        }
+        console.log(hexCodesNode)
     })
 
 }
